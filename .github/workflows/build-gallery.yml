@@ -1,0 +1,60 @@
+name: Build Artist Gallery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - claude/artist-gallery-bright-data-I0rB5
+    paths:
+      - artists.json
+      - build.js
+      - downloader.js
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create .env from secrets
+        run: |
+          cat > .env << EOF
+          BRD_HOST=${{ secrets.BRD_HOST }}
+          BRD_PORT=${{ secrets.BRD_PORT }}
+          BRD_USER=${{ secrets.BRD_USER }}
+          BRD_PASS=${{ secrets.BRD_PASS }}
+          EOF
+
+      - name: Build gallery
+        run: npm run build
+
+      - name: Upload galeria_final.html
+        uses: actions/upload-artifact@v4
+        with:
+          name: galeria-artistas
+          path: galeria_final.html
+          retention-days: 7
+
+      - name: Show result summary
+        run: |
+          SIZE=$(du -sh galeria_final.html | cut -f1)
+          echo "## ✅ Galeria gerada com sucesso!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Arquivo:** galeria_final.html" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tamanho:** $SIZE" >> $GITHUB_STEP_SUMMARY
+          echo "- **Artistas:** 5 (Degas, Munch, Cassatt, Van Gogh, Klimt)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Obras:** 15 imagens via Bright Data Web Unlocker" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Baixe o artefato **galeria-artistas** acima para abrir no browser." >> $GITHUB_STEP_SUMMARY
