@@ -2,18 +2,22 @@ require('dotenv').config();
 const axios = require('axios');
 const sharp = require('sharp');
 const { HttpsProxyAgent } = require('https-proxy-agent');
+const https = require('https');
 
 const PROXY = `https://${process.env.BRD_USER}:${process.env.BRD_PASS}@${process.env.BRD_HOST}:${process.env.BRD_PORT}`;
 
 const MAX_RETRIES = 3;
 const RETRY_DELAY_MS = 1500;
 
+// Ignora erros de certificado SSL do proxy (equivalente ao -k do curl)
+const insecureAgent = new https.Agent({ rejectUnauthorized: false });
+
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function downloadImage(url, retries = MAX_RETRIES) {
-  const agent = new HttpsProxyAgent(PROXY);
+  const agent = new HttpsProxyAgent(PROXY, { rejectUnauthorized: false });
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
