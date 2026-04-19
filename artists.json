@@ -1,0 +1,127 @@
+[
+  {
+    "id": "degas",
+    "name": "Edgar Degas",
+    "years": "1834 – 1917",
+    "nationality": "Francês",
+    "style": "Impressionismo",
+    "bio": "Edgar Degas foi um dos maiores mestres do Impressionismo francês, célebre por suas representações de bailarinas, cenas de café e corridas de cavalos. Seu domínio do movimento e da luz artificial conferem às suas obras uma energia única e inconfundível.",
+    "slides": [
+      {
+        "title": "A Aula de Dança",
+        "year": "1874",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Degas_-_The_Dance_Class.jpg/800px-Degas_-_The_Dance_Class.jpg"
+      },
+      {
+        "title": "Bailarinas Azuis",
+        "year": "1897",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Edgar_Degas_-_Blue_Dancers_%281890%29.jpg/800px-Edgar_Degas_-_Blue_Dancers_%281890%29.jpg"
+      },
+      {
+        "title": "A Estrela",
+        "year": "1878",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Edgar_Germain_Hilaire_Degas_018.jpg/800px-Edgar_Germain_Hilaire_Degas_018.jpg"
+      }
+    ]
+  },
+  {
+    "id": "munch",
+    "name": "Edvard Munch",
+    "years": "1863 – 1944",
+    "nationality": "Norueguês",
+    "style": "Expressionismo",
+    "bio": "Edvard Munch foi um pintor norueguês pioneiro do Expressionismo. Sua obra explora a angústia existencial, o amor, o medo e a morte, utilizando cores intensas e formas distorcidas. 'O Grito' é uma das imagens mais reconhecidas da história da arte.",
+    "slides": [
+      {
+        "title": "O Grito",
+        "year": "1893",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
+      },
+      {
+        "title": "Madonna",
+        "year": "1894",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Edvard_Munch_-_Madonna_%281894-1895%29.jpg/800px-Edvard_Munch_-_Madonna_%281894-1895%29.jpg"
+      },
+      {
+        "title": "Melancolia",
+        "year": "1894",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Edvard_Munch_-_Melancholy_%281894-1896%29.jpg/800px-Edvard_Munch_-_Melancholy_%281894-1896%29.jpg"
+      }
+    ]
+  },
+  {
+    "id": "cassatt",
+    "name": "Mary Cassatt",
+    "years": "1844 – 1926",
+    "nationality": "Americana",
+    "style": "Impressionismo",
+    "bio": "Mary Cassatt foi uma pintora americana que se destacou no movimento impressionista francês, sendo a única norte-americana a expor oficialmente com o grupo de Monet e Degas. Suas obras celebram a vida cotidiana feminina com sensibilidade e delicadeza.",
+    "slides": [
+      {
+        "title": "O Banho da Criança",
+        "year": "1893",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mary_Cassatt_-_The_Child%27s_Bath_-_1893.jpg/800px-Mary_Cassatt_-_The_Child%27s_Bath_-_1893.jpg"
+      },
+      {
+        "title": "Café da Manhã na Cama",
+        "year": "1897",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mary_Cassatt_-_Breakfast_in_Bed_-_1897.jpg/800px-Mary_Cassatt_-_Breakfast_in_Bed_-_1897.jpg"
+      },
+      {
+        "title": "Na Poltrona Azul",
+        "year": "1878",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_1878.jpg/800px-Mary_Cassatt_-_Little_Girl_in_a_Blue_Armchair_-_1878.jpg"
+      }
+    ]
+  },
+  {
+    "id": "vangogh",
+    "name": "Vincent van Gogh",
+    "years": "1853 – 1890",
+    "nationality": "Holandês",
+    "style": "Pós-Impressionismo",
+    "bio": "Vincent van Gogh foi um dos pintores mais influentes da história, cujo trabalho marcou a transição do Pós-Impressionismo para o Expressionismo. Suas pinturas de cores vibrantes e pinceladas expressivas tornaram-se ícones da arte mundial.",
+    "slides": [
+      {
+        "title": "A Noite Estrelada",
+        "year": "1889",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+      },
+      {
+        "title": "Os Girassóis",
+        "year": "1888",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg/800px-Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
+      },
+      {
+        "title": "O Quarto em Arles",
+        "year": "1888",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Vincent_van_Gogh_-_The_Bedroom_-_1888.jpg/800px-Vincent_van_Gogh_-_The_Bedroom_-_1888.jpg"
+      }
+    ]
+  },
+  {
+    "id": "klimt",
+    "name": "Gustav Klimt",
+    "years": "1862 – 1918",
+    "nationality": "Austríaco",
+    "style": "Art Nouveau / Simbolismo",
+    "bio": "Gustav Klimt foi o principal representante do movimento da Secessão de Viena e um dos precursores do Art Nouveau. Conhecido por suas composições douradas e ornamentadas, suas obras combinam figuras humanas com padrões decorativos elaborados.",
+    "slides": [
+      {
+        "title": "O Beijo",
+        "year": "1907–1908",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/800px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
+      },
+      {
+        "title": "Judith I",
+        "year": "1901",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Judith_klimt.jpg/800px-Judith_klimt.jpg"
+      },
+      {
+        "title": "Adele Bloch-Bauer I",
+        "year": "1907",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Adele_Bloch-Bauer_I_by_Gustav_Klimt.jpg/800px-Adele_Bloch-Bauer_I_by_Gustav_Klimt.jpg"
+      }
+    ]
+  }
+]
